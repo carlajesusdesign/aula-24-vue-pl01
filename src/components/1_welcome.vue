@@ -1,13 +1,13 @@
 <script>
-export default {
+export default ({
   name: 'Welcome',
   props: {
     label: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+});
 </script>
 
 <template>
