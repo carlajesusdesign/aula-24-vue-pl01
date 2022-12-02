@@ -1,5 +1,5 @@
 <script>
-export default ({
+export default {
   name: 'Welcome',
   props: {
     label: {
@@ -7,11 +7,11 @@ export default ({
       required: true,
     },
   },
-});
+};
 </script>
 
 <template>
-  <div class="card">
+  <div>
     <h1>Bem-vindo {{ label }}</h1>
   </div>
 </template>
