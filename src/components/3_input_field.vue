@@ -1,33 +1,19 @@
 <template>
   <div>
-    <h1>{{ cumprimento }}</h1>
+    <h1>{{ inputTextValue }}</h1>
+    <input type="text" v-model="inputTextValue" />
   </div>
 </template>
 
 <script>
 export default {
   name: 'InputField',
-  props: {
-    label: {
-      type: String,
-      required: true,
+  data() {
+    return {
+      inputTextValue: ''
     },
   },
-  computed: {
-    cumprimento() {
-      let curHour = new Date().getHours();
-      let cumprimentoTxt;
 
-      if (curHour < 12) {
-        cumprimentoTxt = 'Bom dia';
-      } else if (curHour < 18) {
-        cumprimentoTxt = 'Boa tarde';
-      } else {
-        cumprimentoTxt = 'Boa noite';
-      }
-      return `${cumprimentoTxt} ${this.label}`;
-    },
-  },
 };
 </script>
 

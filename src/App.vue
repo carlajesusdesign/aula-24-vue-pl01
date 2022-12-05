@@ -1,10 +1,12 @@
 <script>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+// 1 passo - importar componentes
 import Welcome from './components/1_welcome.vue';
-//import Hello from './components/2_hello.vue';
-//import InputField from './components/3_input_field.vue';
+import Hello from './components/2_hello.vue';
+import InputField from './components/3_input_field.vue';
 
+// 2 passo - registar os componentes que importamos
 export default {
   components: {
     Welcome,
@@ -23,9 +25,10 @@ export default {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <!-- 3 passo - aplicar a tag com a informação que precisamos, neste caso é o label e o componente registado -->
   <Welcome label="João" />
-  <!-- <Hello label="João" />
-  <InputField label="João" />-->
+  <Hello label="João" />
+  <InputField />
 </template>
 
 <style scoped>
