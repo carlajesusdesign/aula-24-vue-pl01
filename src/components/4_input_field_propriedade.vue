@@ -1,13 +1,11 @@
 <template>
   <div>
     <h1>{{ inputValueProps }}</h1>
-    <!-- <input v-model="inputValueProps" type="text" placeholder="Insira uma palavra"/> -->
     <input
       v-model="inputValueProps"
       type="text"
       placeholder="Insira uma palavra"
-      @input="inputOnKeyDownHandler"
-      :="test"
+      v-blind:value="inputValueProps"
     />
   </div>
 </template>
@@ -15,12 +13,12 @@
 <script>
 export default {
   name: 'InputFieldProps',
-  props:{
+  props: {
     label: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
   data() {
     return {
       inputValueProps: this.label,

@@ -31,7 +31,7 @@ export default {
   <Welcome label="João" />
   <Hello label="João" />
   <InputField />
-  <InputFieldProps />
+  <InputFieldProps label="" />
 </template>
 
 <style scoped>
