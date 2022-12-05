@@ -1,3 +1,9 @@
+<template>
+  <div>
+    <h1>Bem-vindo {{ label }}</h1>
+  </div>
+</template>
+
 <script>
 export default {
   name: 'Welcome',
@@ -9,11 +15,5 @@ export default {
   },
 };
 </script>
-
-<template>
-  <div>
-    <h1>Bem-vindo {{ label }}</h1>
-  </div>
-</template>
 
 <style scoped></style>
