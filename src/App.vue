@@ -5,6 +5,7 @@
 import Welcome from './components/1_welcome.vue';
 import Hello from './components/2_hello.vue';
 import InputField from './components/3_input_field.vue';
+import InputFieldProps from './components/4_input_field_propriedade.vue';
 
 // 2 passo - registar os componentes que importamos
 export default {
@@ -12,6 +13,7 @@ export default {
     Welcome,
     Hello,
     InputField,
+    InputFieldProps,
   },
 };
 </script>
@@ -29,6 +31,7 @@ export default {
   <Welcome label="João" />
   <Hello label="João" />
   <InputField />
+  <InputFieldProps />
 </template>
 
 <style scoped>

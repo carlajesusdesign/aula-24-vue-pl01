@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>{{ inputTextValue }}</h1>
-    <input type="text" v-model="inputTextValue" />
+    <h1>{{ inputValue }}</h1>
+    <input v-model="inputValue" type="text" placeholder="Insira uma palavra" />
   </div>
 </template>
 
@@ -10,10 +10,9 @@ export default {
   name: 'InputField',
   data() {
     return {
-      inputTextValue: ''
-    },
+      inputValue: '',
+    };
   },
-
 };
 </script>
 
